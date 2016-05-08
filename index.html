@@ -16,33 +16,19 @@
     <section id="projects-section" ng-controller="projectsController">
       <h2>Check out my projects</h2>
 
-      <!-- <div class="projects">
-        <div class="project" ng-repeat="project in projects">
-          <h4>{{ project.name }}</h4>
-          <img ng-src="www/img/{{ project.img }}"/>
-          <sub>role: {{ project.role }}</sub>
-          <p>{{ project.description }}</p>
-        </div>
-      </div> -->
-
-
-
       <div class="carousel">
-        <div ng-repeat="project in projects">
+        <div class ="project" ng-repeat="project in projects">
           <h4>{{ project.name }}</h4>
-          <img ng-src="www/img/{{ project.img }}"/>
+          <img class="carousel-image" ng-src="www/img/{{ project.img }}"/>
           <sub>role: {{ project.role }}</sub>
           <p>{{ project.description }}</p>
+          <a ng-if="project.link" href="{{project.link}}" rel="external" target="_blank"> link </a>
       </div>
     </section>
 
-    <script type="text/javascript" src="www/js/angular.min.js"></script>
-    <script type="text/javascript" src="www/js/projects.js"></script>
-    <script type="text/javascript" src="www/js/main.js"></script>
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="main.min.js"></script>
     <script type="text/javascript" src="www/js/slick.min.js"></script>
-
   </body>
 </html>
