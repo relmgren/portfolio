@@ -47,6 +47,5 @@ var app = angular.module('app', [])
     $scope.selectProject = function (project) {
       $scope.selectedProject = project;
       console.log(project);
-      $scope.$apply()
     };
   }]);
