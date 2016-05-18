@@ -7,27 +7,28 @@
     <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-app="app">
+  <body ng-app="app" ng-controller="projectsController">
 
-    <section id="splash" class="primary dark-bg">
+    <section class="primary dark-bg">
       <h1>Rasmus Elmgren</h1>
 
       <p>I am a programmer currently studying towards a Master's degree in Computer Science at the Royal Institute of Technology with a major in Human Computer Interaction.</p>
     </section>
 
-    <section id="portfolio" class="secondary light-bg">
+    <section class="secondary light-bg">
       <h1>Portfolio</h1>
 
-      <div class="project-container"  ng-controller="projectsController">
-        <div class="project" ng-repeat="project in projects">
+      <div class="project-container">
+        <div class="project" ng-repeat="project in projects" ng-click="selectProject(project)">
           <img ng-src="www/img/{{ project.img }}"/>
           <h2>{{ project.name }}</h2>
         </div>
+      </div>
     </section>
 
-    <footer>
-
-    </footer>
+    <section id="slide-in">
+      {{ selectedProject.title }}
+    </section>
 
     <script type="text/javascript" src="main.min.js"></script>
   </body>

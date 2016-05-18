@@ -1,5 +1,6 @@
 var app = angular.module('app', [])
   .controller('projectsController', ['$scope', function($scope) {
+    $scope.selectedProject;
     $scope.projects = [
       {
         name: 'Interactive Bus Signs',
@@ -43,4 +44,9 @@ var app = angular.module('app', [])
       }
     ];
 
+    $scope.selectProject = function (project) {
+      $scope.selectedProject = project;
+      console.log(project);
+      $scope.$apply()
+    };
   }]);
