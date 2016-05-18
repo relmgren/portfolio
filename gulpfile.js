@@ -51,5 +51,5 @@ gulp.task('serve', ['sass', 'compress'], function () {
   gulp.watch('www/js/*.js').on('change', function() {
     runSequence('compress', browserSync.reload)
   });
-  gulp.watch('index.html').on('change', browserSync.reload);
+  gulp.watch('./index.html').on('change', browserSync.reload);
 });

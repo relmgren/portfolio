@@ -2,7 +2,7 @@ var app = angular.module('app', [])
   .controller('projectsController', ['$scope', function($scope) {
     $scope.projects = [
       {
-        name: 'Interactive Commercial Bus Signs',
+        name: 'Interactive Bus Signs',
         role: 'Designer and Developer',
         img: 'city-heat-map.jpg',
         link: '',
@@ -42,15 +42,5 @@ var app = angular.module('app', [])
         participants: ['Eric Blomquist', 'Ludwig Sidenmark']
       }
     ];
-
-    $(document).ready(function() {
-      $('.carousel').slick({
-        arrows: false,
-        adaptiveHeight: true,
-        centerMode: true,
-        mobileFirst: true
-
-      })
-    });
 
   }]);
