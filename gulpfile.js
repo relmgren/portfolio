@@ -12,7 +12,8 @@ var browserSync = require('browser-sync').create();
 
 var paths = {
   sass: ['./sass/**/*.scss', './sass/**/*.sass'],
-  img: ['./www/img/**/*.png', './www/img/**/*.jpg', './www/img/**/*.svg']
+  img: ['./www/img/**/*.png', './www/img/**/*.jpg', './www/img/**/*.svg'],
+  views: ['./www/views/**/*.html']
 };
 
 gulp.task('default', ['serve']);
@@ -48,8 +49,10 @@ gulp.task('serve', ['sass', 'compress'], function () {
 
   gulp.watch(paths.sass, ['sass', browserSync.reload]);
   gulp.watch(paths.img).on('change', browserSync.reload);
+  gulp.watch(paths.views).on('change', browserSync.reload);
   gulp.watch('www/js/*.js').on('change', function() {
     runSequence('compress', browserSync.reload)
   });
   gulp.watch('./index.html').on('change', browserSync.reload);
+
 });
