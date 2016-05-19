@@ -1,5 +1,5 @@
 (function() {
-var app = angular.module('app', ['ngRoute', 'ui.router'])
+var app = angular.module('app', ['ngRoute', 'ui.router', 'ngAnimate'])
   .controller('projectsController', ['$scope', function($scope) {
     $scope.selectedProject;
     $scope.projects = [
@@ -57,11 +57,11 @@ var app = angular.module('app', ['ngRoute', 'ui.router'])
   }]);
 
   app.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/index');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
       .state('index', {
-        url: '/index',
+        url: '/',
         templateUrl: 'www/views/index.html'
       })
       .state('studs', {

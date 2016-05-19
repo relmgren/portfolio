@@ -34,6 +34,22 @@ html, body
   p
     color: $text-light-secondary
 
+.changing-view
+
+
+  /* start 'enter' transition */
+  &.ng-enter
+      /* transition on enter for .5s */
+      transition: .5s
+      /* start with opacity 0 (invisible) */
+      opacity: 0
+
+  /* end 'enter' transition */
+  &.ng-enter-active
+      /* end with opacity 1 (fade in) */
+      opacity: 1
+
+
 .project-container
   width: 80%
   margin: auto
@@ -57,4 +73,3 @@ html, body
   img
     width: 100%
     height: auto
-    
