@@ -184,8 +184,20 @@ html, body {
   width: 100vw;
   height: 100%; }
 
+a:link {
+  color: #80CBC4; }
+
+a:hover {
+  color: #80CBC4; }
+
+a:active {
+  color: #4DB6AC; }
+
+a:visited {
+  color: #4DB6AC; }
+
 .primary {
-  background-color: #F44336;
+  background-color: #009688;
   color: #F0F1EE;
   padding: 5%;
   padding-left: 20%;
@@ -247,5 +259,18 @@ html, body {
     box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.75);
     transform: translate(0px, -5px); }
   .project img {
+    width: 100%;
+    height: auto; }
+
+.showcase {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 14px;
+  background-color: white;
+  transition: all ease-in-out 250ms; }
+  .showcase:hover {
+    box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.75);
+    transform: translate(0px, -5px); }
+  .showcase img {
     width: 100%;
     height: auto; }
