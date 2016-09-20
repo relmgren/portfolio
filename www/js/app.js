@@ -25,7 +25,7 @@ var app = angular.module('app', ['ngRoute', 'ui.router', 'ngAnimate'])
         name: 'Voice Controlled Animation',
         role: 'Programmer',
         img: 'vca.jpg',
-        link: 'https://www.youtube.com/watch?v=6bI5TPnc2NI&index=9&list=FL5OeLqOJLESrqvNyUlvLJ8w',
+        link: 'https://www.youtube.com/watch?v=6bI5TPnc2NI',
         description: 'Developed in the Unity game engine we made a small game that used the voice of the players as the only input for the main players side kick. Using multiple modalitys was fun and gave the game another dimension.',
         participants: ['Alexander Johansson', 'Björn Englesson', 'Eric Blomquist'],
         slug:'vca'
@@ -47,6 +47,15 @@ var app = angular.module('app', ['ngRoute', 'ui.router', 'ngAnimate'])
         description: 'In the course "Interaction Design Methods" we had design projects based on 10-year old children ideas. Our projects was to design an app that would record music and output sheet music.',
         participants: ['Eric Blomquist', 'Ludwig Sidenmark'],
         slug: 'sheetify'
+      },
+      {
+        name: 'Wheelchair VR Demo',
+        role: 'Programing, Models and Design',
+        img: 'wheelchair.jpg',
+        link: 'https://www.youtube.com/watch?v=03g4BAvUr1k',
+        description: 'During the summer of 2016, my friends and I created a small virtual reality puzzle game for the HTC Vive. We were interested in how to approach the problem of movement in virtual reality so we decided to give a virtual electrical wheelchair a try. The puzzle game was created using Unreal Engine 4 and the HTC Vive. I worked on level design and worked alot with models in Blender. Later on, I also implemented the models logic in Unreal Engine.',
+        participants: ['Björn Englesson', 'Eric Blomquist', 'Emilio Lando'],
+        slug: 'wheelchair'
       }
     ];
 
@@ -83,6 +92,10 @@ var app = angular.module('app', ['ngRoute', 'ui.router', 'ngAnimate'])
       .state('studs-app', {
         url: '/projects/studs-app',
         templateUrl: 'www/views/studs-app.html'
+      })
+      .state('wheelchair', {
+        url: '/projects/wheelchair',
+        templateUrl: 'www/views/wheelchair.html'
       })
   });
 })();
