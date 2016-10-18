@@ -1,27 +1,174 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!-- Yes, I used the Material Design Lite Template -->
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio of Rasmus Elmgren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Rasmus Elmgren</title>
-    <link rel="stylesheet" href="www/css/main.css" media="screen" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+a
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-orange.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body ng-app="app" ng-controller="projectsController">
-    <section class="primary dark-bg">
-      <h1>Rasmus Elmgren</h1>
+  <body>
+    <div class="demo-blog mdl-layout mdl-js-layout is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid">
+          <div class="mdl-card keyboard mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3>VR, PROGRAMMING and DESIGN</h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              I'm a KTH-student doing my last semester before Masters' thesis. With a background in Computer Science I want to work with implementations and/or design in VR/AR. Below is a list of my projects
+            </div>
+          </div>
+          <div class="mdl-card introduction mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              Portfolio of Rasmus Elmgren
+            </div>
+          </div>
 
-      <p>I am a programmer currently studying towards a Master's degree in Computer Science at the Royal Institute of Technology with a major in Human Computer Interaction.</p>
-    </section>
+          <div class="mdl-card the-chosen-one mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://bengles.github.io/The_Chosen_One/">The Chosen One</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              A currently ongoing school project in the course Advanced Graphics and Interaction. The player takes the role of Neo in The Matrix and tries to dodge bullets. We track the player with HTC Vive and Mircosoft's Kinect. I've been working with modelling in Blender, particles, sound interaction, user interaction and mechanics in Unreal Engine 4 so far. We presented our work at ForskarFredag and will present on Comic Con later on.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="vive-logo"></div>
+              <div>
+                <strong>HTC Vive, VR, Modelling, UX</strong>
+                <span>HT 2016</span>
+              </div>
+            </div>
+          </div>
 
-    <div class="changing-view" ui-view></div>
+          <div class="mdl-card wheelchair-demo mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__title mdl-color-text--grey-50">
+              <h3><a href="https://youtu.be/03g4BAvUr1k">HTC Vive Wheelchair puzzle demo</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              During the summer of '16 me and a few friends bought an HTC Vive and made a small demo in Unreal Engine 4. We thought alot about the locomotion problem and tried to combat it by letting the player sit in an electric wheelchair. I worked with UX, designing levels and interaction, and modelling objects in the world. Click the banner to watch a demo!
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="vive-logo"></div>
+              <div>
+                <strong>HTC Vive, VR, Modelling, UX</strong>
+                <span>Summer of '16</span>
+              </div>
+            </div>
+          </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-    <script type="text/javascript" src="www/js/app.js">
+          <div class="mdl-card studs mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="http://www.studieresan.se/">Studieresan.se</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              I was group leader for the IT-team for the project Studs. During my time I recruited three Computer Science students and together we built the website studieresan.se sporting CV-functionality, event-scheduling and a fresh flat look. With a turnover of over 900.000 SEK we went on a study trip in the US.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="studs-logo"></div>
+              <div>
+                <strong>HTML, JS, Angular, CSS, Node, MEAN-Stack, Teamleading</strong>
+                <span>2015/2016</span>
+              </div>
+            </div>
+          </div>
 
-    </script>
+          <div class="mdl-card interactive-bus-signs mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://youtu.be/1r7T8zofFz4">Interactive Bus Signs</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              In the course Interaction Design I designed an Interactive Bus-sign and implemented a version in HTML and JS. The course mainly focused on how the user would interact with our creations and how Internet of Things could affect people in cities.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div>
+                <strong>HTML, JS, CSS, Photoshop, UX</strong>
+                <span>2015/2016</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-card studs-app mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://github.com/relmgren/studs-app">Studs phone app</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              For the study trip me and some friends created a phone app using the Ionic Framework. The app worked as a schedule and also contained challenges where the users could upload photos.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div>
+                <strong>JS, Ionic, App-development, UX</strong>
+                <span>2015/2016</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <a href="https://twitter.com/relmgren"><button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+              <span class="visuallyhidden">Twitter</span>
+            </button></a>
+            <a href="https://www.facebook.com/rasmus.elmgren">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+              <span class="visuallyhidden">Facebook</span>
+            </button>
+            </a>
+            <a href="https://se.linkedin.com/in/rasmus-elmgren-a2663595">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__linkedin">
+              <span class="visuallyhidden">LinkedIn</span>
+            </button>
+            </a>
+          </div>
+
+          <div class="mdl-mini-footer--right-section">
+            contact elmgren93@gmail.com
+          </div>
+
+        </footer>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
 </html>
