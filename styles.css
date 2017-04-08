@@ -191,17 +191,17 @@ body .demo-blog {
   background-image: url('images/the-chosen-ones.jpg');
 }
 .demo-blog .wheelchair-demo .mdl-card__title {
-  background-image: url('images/wheelchair-demo.png');
+  background-image: url('images/wheelchair-demo.jpg');
 }
 .demo-blog .studs .mdl-card__media {
-  background-image: url('images/studs.png');
+  background-image: url('images/studs.jpg');
 }
 .demo-blog .interactive-bus-signs .mdl-card__media {
   background-image: url('images/city-heat-map.jpg');
 }
 
 .demo-blog .studs-app .mdl-card__media {
-  background-image: url('images/icon.png');
+  background-image: url('images/icon.jpg');
 }
 
 .demo-blog .demo-blog__posts > .demo-nav {
