@@ -187,6 +187,9 @@ body .demo-blog {
 .demo-blog .introduction .mdl-card__media {
   background-image: url('images/Rasmus-Elmgren.jpg');
 }
+.demo-blog .handwriting-unity .mdl-card__title {
+  background-image: url('images/handwriting-unity.jpg');
+}
 .demo-blog .the-chosen-one .mdl-card__media {
   background-image: url('images/the-chosen-ones.jpg');
 }
