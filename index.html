@@ -146,18 +146,20 @@
 
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
-            <a href="https://twitter.com/relmgren"><button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-              <span class="visuallyhidden">Twitter</span>
-            </button></a>
+            <a href="https://twitter.com/relmgren">
+              <div class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+                <span class="visuallyhidden">Twitter</span>
+              </div>
+            </a>
             <a href="https://www.facebook.com/rasmus.elmgren">
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
-              <span class="visuallyhidden">Facebook</span>
-            </button>
+              <div class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+                <span class="visuallyhidden">Facebook</span>
+              </div>
             </a>
             <a href="https://se.linkedin.com/in/rasmus-elmgren-a2663595">
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__linkedin">
-              <span class="visuallyhidden">LinkedIn</span>
-            </button>
+              <div class="mdl-mini-footer--social-btn social-btn social-btn__linkedin">
+                <span class="visuallyhidden">LinkedIn</span>
+              </div>
             </a>
           </div>
 
@@ -170,19 +172,4 @@
       <div class="mdl-layout__obfuscator"></div>
     </div>
   </body>
-  <script>
-    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
-      var link = el.querySelector('a');
-      if(!link) {
-        return;
-      }
-      var target = link.getAttribute('href');
-      if(!target) {
-        return;
-      }
-      el.addEventListener('click', function() {
-        location.href = target;
-      });
-    });
-  </script>
 </html>

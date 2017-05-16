@@ -301,3 +301,8 @@ body .demo-blog {
   background-color: white;
   box-sizing: border-box;
 }
+
+.mdl-mini-footer--left-section {
+  display: flex;
+  flex-direction: row;
+}
